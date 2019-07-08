@@ -8,8 +8,8 @@ function App() {
   const [homeScore, setHomeScore] = useState(32);
   const [awayScore, setAwayScore] = useState(32);
    const [time, setTime] = useState(new Date().toLocaleTimeString());
-   const homeTeam = "Colts";
-   const awayTeam = "Patriots";
+   const homeTeam = "Home";
+   const awayTeam = "Guest";
 
   const homeTouchdown = () => setHomeScore(homeScore + 7);
   const homeFieldgoal = () => setHomeScore(homeScore + 3);
