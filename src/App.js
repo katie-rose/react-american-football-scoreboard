@@ -1,5 +1,5 @@
 //TODO: STEP 1 - Import the useState hook.
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
 
@@ -15,6 +15,17 @@ function App() {
   const homeFieldgoal = () => setHomeScore(homeScore + 3);
   const awayTouchdown = () => setAwayScore(awayScore + 7);
   const awayFieldgoal = () => setAwayScore(awayScore + 3);
+
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      const date = new Date();
+      setTime(date.toLocaleTimeString());
+    }, 1000);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [time]);
 
   return (
     <div className="container">
