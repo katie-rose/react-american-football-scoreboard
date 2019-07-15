@@ -1,4 +1,7 @@
 :root {
+    background: url('https://img.reelgood.com/content/show/51f23b26-a349-42d6-9b9b-0a236948ab6a/backdrop-1920.jpg');
+    background-size: auto;
+     background-repeat: no-repeat;
   --black: #0d0d0d;
   --red: #ff2d2b;
 }
@@ -6,7 +9,8 @@
 .scoreboard {
   width: 58%;
   margin: 10rem auto;
-  background-color: #0b5402;
+  background-color: #000;
+  opacity: 0.7;
   color: white;
   border-radius: 0.5rem;
   margin-top: 10rem;
@@ -34,11 +38,13 @@
 }
 
 .home {
-  background-color: #656565;
+  background-color: #ccc;
+  color: black;
 }
 
 .away {
-  background-color: #af750a;
+  background-color: #ccc;
+  color: black;
 }
 
 .home__name,
@@ -54,7 +60,7 @@
 
 .home__score,
 .away__score {
-  font-family: "Ozone";
+  font-family: "Graduate";
   font-size: 7rem;
   width: 90%;
   text-align: center;
@@ -64,13 +70,15 @@
 }
 
 .timer {
-  font-family: "Ozone";
-  font-size: 9rem;
+   font-family: "Graduate";
+  font-size: 5.7rem;
   padding: 2rem;
   text-align: center;
   background-color: var(--black);
   border: 2px solid white;
   border-radius: 6px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .bottomRow {
@@ -94,7 +102,7 @@
 .toGo__value,
 .ballOn__value,
 .quarter__value {
-  font-family: "Ozone";
+   font-family: "Graduate";
   font-size: 5rem;
   color: var(--red);
   width: 7rem;
@@ -111,6 +119,7 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+    font-family: "Graduate";
 }
 
 .homeButtons__touchdown,
